@@ -40,3 +40,4 @@ function validate_submit(){
 		alert(alertmessage);
 		return false;
 	}
+}
