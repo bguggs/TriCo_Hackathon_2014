@@ -6,10 +6,11 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+	<script src="validate_submit.js"></script>
 </head>
 <body>
 	<div id="formdiv" style="padding:50px;">
-		<form action="insert.php" method="post">
+		<form action="insert.php" name="submit_form" onsubmit="return validate_submit()" method="post">
 		<!-- User text area -->
 		<label for="text-basic">Username:</label>
 		<input type="text" name="User" id="text-basic" value="">
@@ -50,9 +51,9 @@
 		<h4 style="text-align:center;">Navigation</h4>
 		<div data-role="navbar">
 			<ul>
-				<li><a href="Index.php">Home</a></li>
-				<li><a href="About.php">About</a></li>
-				<li><a href="InputForm.php" class="ui-btn-active">Submit Activity</a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="inputform.php" class="ui-btn-active">Submit Activity</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->

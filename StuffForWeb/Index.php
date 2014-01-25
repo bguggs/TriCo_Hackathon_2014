@@ -15,9 +15,9 @@
     <h4 style="text-align:center;">Navigation</h4>
     <div data-role="navbar">
         <ul>
-            <li><a href="Index.php" class="ui-btn-active">Home</a></li>
-            <li><a href="About.php">About</a></li>
-            <li><a href="InputForm.php">Submit Activity</a></li>
+            <li><a href="index.php" class="ui-btn-active">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="inputform.php">Submit Activity</a></li>
         </ul>
     </div><!-- /navbar -->
 </div><!-- /footer -->

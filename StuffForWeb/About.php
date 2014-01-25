@@ -18,9 +18,9 @@
     <h4 style="text-align:center;">Navigation</h4>
     <div data-role="navbar">
         <ul>
-            <li><a href="Index.php">Home</a></li>
-            <li><a href="About.php" class="ui-btn-active">About</a></li>
-            <li><a href="InputForm.php">Submit Activity</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php" class="ui-btn-active">About</a></li>
+            <li><a href="inputform.php">Submit Activity</a></li>
         </ul>
     </div><!-- /navbar -->
 </div>
