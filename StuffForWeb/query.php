@@ -8,26 +8,27 @@
 		@mysql_select_db($database) or die( "Unable to select database");
 		$query = "SELECT * FROM Games_List";
 		$result=mysql_query($query);
-		$row=mysql_fetch_array($result);
-		/*$possibilities=array();
+		$possibilities=array();
 		while ($row=mysql_fetch_array($result)){
-			$possibilities[]=$row['Key'];
+			for($i=0;$i<$row['Weight'];$i++){
+				$possibilities[]=$row['Key'];
+			}
 		}
-		$num=rand(0,count($possibilities));
+		$num=rand(0,(count($possibilities)-1));
 		$choice=$possibilities[$num];
-		$chosenquery="SELECT * FROM Games_List WHERE Key='" + strval($choice)+"'";
+		$chosenquery="SELECT * FROM `Games_List` WHERE `Key`='". strval($choice) ."'";
 		$gamequery=mysql_query($chosenquery);
-		$thegameinfo=mysql_fetch_array($gamequery);*/
+		$selectedgame=mysql_fetch_array($gamequery);
 		mysql_close();
 	?>
-	<title>Play <?php echo $row['Game_Name']; ?></title>
+	<title>Play <?php echo $selectedgame['Game_Name']; ?></title>
 </head>
 <body>
 	<p>
 	<?php
-		echo $row['Game_Name'];
+		echo $selectedgame['Game_Name'];
 		echo '<br>';
-		echo $row['Requirements'];
+		echo $selectedgame['Requirements'];
 	?>
 	</p>
 </body>
